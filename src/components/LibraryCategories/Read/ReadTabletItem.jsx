@@ -47,7 +47,7 @@ const ReadTabletItem = ({ color, book, openModal }) => {
                             variant={'gray'}
                             onClick={openResumeModal}
                         >
-                            Резюме
+                            Summary
                         </ButtonRating>
                     </ItemBook>
                 </AnimationItem>

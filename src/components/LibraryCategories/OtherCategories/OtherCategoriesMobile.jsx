@@ -1,12 +1,10 @@
-import {List, Title, EmptyCategoryMessage} from '../LibraryCategories.styled';
+import { List, Title, EmptyCategoryMessage } from '../LibraryCategories.styled';
 import OtherCategoriesMobileItem from '../OtherCategories/OtherCategoriesMobileItem';
 
 const OtherCategoriesMobile = ({ color, type, books }) => {
     return (
         <>
-            <Title>
-                {type === 'inProcess' ? 'Читаю' : 'Маю намір прочитати'}
-            </Title>
+            <Title>{type === 'inProcess' ? 'Reading' : 'Want to read'}</Title>
             {!!books?.length ? (
                 <List>
                     {books &&
@@ -18,9 +16,10 @@ const OtherCategoriesMobile = ({ color, type, books }) => {
                             />
                         ))}
                 </List>
-            ) : (<EmptyCategoryMessage>
-                    Тут поки що немає книг
-            </EmptyCategoryMessage>
+            ) : (
+                <EmptyCategoryMessage>
+                    No books here yet...
+                </EmptyCategoryMessage>
             )}
         </>
     );

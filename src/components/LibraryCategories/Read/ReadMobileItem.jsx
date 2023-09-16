@@ -28,16 +28,16 @@ const ReadMobileItem = ({ book, color, openModal }) => {
                     <WrapperItem>
                         <Text> {title} </Text>
                         <Text>
-                            <TextSelection>Автор:</TextSelection> {author}
+                            <TextSelection>Author:</TextSelection> {author}
                         </Text>
                         <Text>
-                            <TextSelection>Рік:</TextSelection> {year}
+                            <TextSelection>Year:</TextSelection> {year}
                         </Text>
                         <Text>
-                            <TextSelection>Стор.:</TextSelection> {totalPages}
+                            <TextSelection>Pages:</TextSelection> {totalPages}
                         </Text>
                         <Text>
-                            <TextSelection>Рейтинг:</TextSelection>{' '}
+                            <TextSelection>Rating:</TextSelection>{' '}
                             <StyledRating
                                 name="no-value"
                                 value={Number(rating)}
@@ -50,7 +50,7 @@ const ReadMobileItem = ({ book, color, openModal }) => {
                             variant={'gray'}
                             onClick={openResumeModal}
                         >
-                            Резюме
+                            Summary
                         </Button>
                     </WrapperItem>
                 </Item>

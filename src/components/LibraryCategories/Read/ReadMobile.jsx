@@ -4,7 +4,7 @@ import ReadMobileItem from '../Read/ReadMobileItem';
 const ReadMobile = ({ color, books, openModal }) => {
     return (
         <>
-            <Title>Прочитано</Title>
+            <Title>Finished</Title>
             {!!books?.length ? (
                 <>
                     <List>
@@ -21,7 +21,7 @@ const ReadMobile = ({ color, books, openModal }) => {
                 </>
             ) : (
                 <EmptyCategoryMessage>
-                    Тут поки що немає книг
+                    No books here yet...
                 </EmptyCategoryMessage>
             )}
         </>

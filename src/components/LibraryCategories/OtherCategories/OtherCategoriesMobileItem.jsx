@@ -21,14 +21,14 @@ const OtherCategoriesMobileItem = ({ color, book }) => {
                     <WrapperItem>
                         <Text>{title}</Text>
                         <Text>
-                            <TextSelection>Автор:</TextSelection>
+                            <TextSelection>Author:</TextSelection>
                             {author}
                         </Text>
                         <Text>
-                            <TextSelection>Рік:</TextSelection> {year}
+                            <TextSelection>Year:</TextSelection> {year}
                         </Text>
                         <Text>
-                            <TextSelection>Стор.:</TextSelection>
+                            <TextSelection>Pages:</TextSelection>
                             {totalPages}
                         </Text>
                     </WrapperItem>

@@ -21,10 +21,10 @@ const OtherCategoriesTablet = ({ type, color, books }) => {
             {!!books?.length ? (
                 <>
                     <WrapperTitles>
-                        <TitleName>Назва книги</TitleName>
-                        <TitleAuthor>Автор</TitleAuthor>
-                        <TitleYear>Рік</TitleYear>
-                        <TitlePage>Стор.</TitlePage>
+                        <TitleName>Name of the book</TitleName>
+                        <TitleAuthor>Author</TitleAuthor>
+                        <TitleYear>Year</TitleYear>
+                        <TitlePage>Pages</TitlePage>
                     </WrapperTitles>
                     <ListOther>
                         {books &&
@@ -39,7 +39,7 @@ const OtherCategoriesTablet = ({ type, color, books }) => {
                 </>
             ) : (
                 <EmptyCategoryMessage>
-                    Тут поки що немає книг
+                    No books here yet...
                 </EmptyCategoryMessage>
             )}
         </>
