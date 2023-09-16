@@ -14,9 +14,7 @@ import OtherCategoriesTabletItem from '../OtherCategories/OtherCategoriesTabletI
 const OtherCategoriesTablet = ({ type, color, books }) => {
     return (
         <>
-            <Title>
-                {type === 'inProcess' ? 'Читаю' : 'Маю намір прочитати'}
-            </Title>
+            <Title>{type === 'inProcess' ? 'Reading' : 'Want to read'}</Title>
 
             {!!books?.length ? (
                 <>
