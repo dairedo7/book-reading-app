@@ -71,11 +71,11 @@ export function Results({ results, endDate, minDate }) {
     return (
         <>
             <Wrapper>
-                <Title>Результати</Title>
+                <Title>Results</Title>
                 <Form>
                     <WrapperOdLabels>
                         <Label>
-                            Дата
+                            Date
                             <DatePickerCustom
                                 disabledDate={disabledDate}
                                 format="DD.MM.YY"
@@ -89,7 +89,7 @@ export function Results({ results, endDate, minDate }) {
                             />
                         </Label>
                         <Label>
-                            Кількість сторінок
+                            Number of pages
                             <Input
                                 defaultValue={pages}
                                 onChange={setPages}
@@ -97,10 +97,10 @@ export function Results({ results, endDate, minDate }) {
                         </Label>
                     </WrapperOdLabels>
                     <Button type="submit" onClick={handleSubmit}>
-                        Додати результат
+                        Add the result
                     </Button>
                 </Form>
-                <Title>СТАТИСТИКА</Title>
+                <Title>STATISTICS</Title>
                 <DatesList>
                     {results.slice(-5).map((item, index) => {
                         return <DateItem key={index} data={item}></DateItem>;

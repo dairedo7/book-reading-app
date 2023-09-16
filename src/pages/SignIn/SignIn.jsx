@@ -42,7 +42,7 @@ const SignIn = () => {
 
                             <SignInForm />
 
-                            <Link to={'/signup'}>Реєстрація</Link>
+                            <Link to={'/signup'}>Sign Up</Link>
                         </MobBox>
                     </TabletBox>
                     <QuoteBox>

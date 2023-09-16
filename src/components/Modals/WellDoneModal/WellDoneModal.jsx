@@ -21,16 +21,16 @@ const WellDoneModal = ({ closeModal }) => {
                     <use href={`${icons}#icon-thumbUp`} />
                 </Icon>
                 <Text>
-                    Ти молодчина, <br />
-                    але потрібно швидше! <br />
-                    Наступного разу тобі все вдасться)
+                    Not bad, <br />
+                    but you can do better! <br />
+                    Next time, things will go your way.
                 </Text>
                 <ButtonWrapper>
                     <Button variant={'tranparent'} onClick={goToNewTraining}>
-                        Нове тренування
+                        New training
                     </Button>
                     <Button variant={'accent'} onClick={finishTraining}>
-                        Назад
+                        Return to the library
                     </Button>
                 </ButtonWrapper>
             </ModalWrapper>

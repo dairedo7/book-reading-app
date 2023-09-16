@@ -162,7 +162,7 @@ export function TrainingForm({
                 ))}
             </Selects>
             <Button type="submit" variant={'transparent'}>
-                Додати
+                Add
             </Button>
         </Form>
     );

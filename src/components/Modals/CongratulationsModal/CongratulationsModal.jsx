@@ -11,12 +11,12 @@ const CongratulationsModal = ({ closeModal }) => {
                     <use href={`${icons}#icon-thumbUp`} />
                 </Icon>
                 <Text>
-                    Вітаю! <br />
-                    Ще одна книга прочитана.
+                    Congratulations! <br />
+                    Another book has been read!
                 </Text>
 
                 <Button variant={'accent'} onClick={closeModal}>
-                    Готово
+                    Done
                 </Button>
             </ModalWrapper>
         </>

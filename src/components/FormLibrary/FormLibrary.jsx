@@ -54,7 +54,7 @@ const FormLibrary = () => {
                     </Link>
                     <Form onSubmit={handleSubmit(onSubmit)}>
                         <Label>
-                            Назва книги
+                            Name of the book
                             <Input
                                 {...register('title', { required: true })}
                                 type="text"
@@ -64,7 +64,7 @@ const FormLibrary = () => {
                             />
                         </Label>
                         <Label>
-                            Автор книги
+                            Author
                             <Input
                                 {...register('author', { required: true })}
                                 type="text"
@@ -88,7 +88,7 @@ const FormLibrary = () => {
                                         }}
                                         renderInput={params => (
                                             <Label>
-                                                <span>Рік випуску</span>
+                                                <span>Year of release</span>
                                                 <WrapYear>
                                                     <YearPicker {...params} />
                                                 </WrapYear>
@@ -100,7 +100,7 @@ const FormLibrary = () => {
                             )}
                         />
                         <Label>
-                            Кількість сторінок
+                            Number of pages
                             <Input
                                 {...register('totalPages', { required: true })}
                                 type="number"
@@ -111,7 +111,7 @@ const FormLibrary = () => {
                         </Label>
 
                         <Button type="submit" variant={'transparent'}>
-                            Додати
+                            Add
                         </Button>
                     </Form>
                 </Wrapper>

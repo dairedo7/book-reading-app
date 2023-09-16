@@ -44,7 +44,7 @@ const LibraryCategories = () => {
                     {isDoneBooks && (
                         <LinkMoreWrapper>
                             <LinkMore to={'read'}>
-                                Усі книги
+                                All books
                                 <ArrowMore width="24" height="12">
                                     <use href={`${icons}#icon-arrowMore`} />
                                 </ArrowMore>
@@ -56,7 +56,7 @@ const LibraryCategories = () => {
                     {isInProcessBooks && (
                         <LinkMoreWrapper>
                             <LinkMore to={'in-process'}>
-                                Усі книги
+                                All books
                                 <ArrowMore width="24" height="12">
                                     <use href={`${icons}#icon-arrowMore`} />
                                 </ArrowMore>
@@ -68,7 +68,7 @@ const LibraryCategories = () => {
                     {isPlanBooks && (
                         <LinkMoreWrapper>
                             <LinkMore to={'plan'}>
-                                Усі книги
+                                All books
                                 <ArrowMore width="24" height="12">
                                     <use href={`${icons}#icon-arrowMore`} />
                                 </ArrowMore>

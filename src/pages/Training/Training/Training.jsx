@@ -13,7 +13,11 @@ import Goals from '../../../components/Goals';
 import { ListOfBooksStartTraining } from '../../../components/ListOfBooksStartTraining';
 import { Graph } from '../../../components/Graph/Graph';
 import { useState } from 'react';
-import { useAddPlaningMutation, useGetPlanBooksQuery, useGetPlanningQuery } from '../../../redux/books/booksSlice';
+import {
+    useAddPlaningMutation,
+    useGetPlanBooksQuery,
+    useGetPlanningQuery,
+} from '../../../redux/books/booksSlice';
 import { differenceInCalendarDays, format } from 'date-fns';
 import Statistics from '../../Statistics/Statistics';
 import { Loader } from '../../../components/Loader/Loader';
@@ -40,7 +44,7 @@ export const Training = () => {
 
     const addBook = id => {
         if (selectedBooks.find(book => book._id === id)) {
-            warningNotification('Ви не можете додати ту ж книжку ще раз!');
+            warningNotification('You cannot add the same book twice!');
             return;
         }
 
@@ -67,13 +71,15 @@ export const Training = () => {
         );
 
         if (!startValue || !endValue) {
-            warningNotification('Оберіть початок та кінець тренування!');
+            warningNotification(
+                'Pick the beginning and the end of the training!'
+            );
             return;
         }
 
         if (books.length === 0) {
             warningNotification(
-                'Перед тим як почати тренування виберіть із бібліотеки хоча б одну книгу!'
+                'To start your training, choose at least one book from the library!'
             );
             return;
         }
@@ -124,7 +130,7 @@ export const Training = () => {
 
                     <FormListWrapper>
                         <FormWrapper>
-                            <Title>Моє тренування</Title>
+                            <Title>My training</Title>
                             <TrainingForm
                                 addBook={addBook}
                                 startValue={startValue}
@@ -146,7 +152,7 @@ export const Training = () => {
 
                 <BottomWrapper>
                     <Button variant={'accent'} onClick={startNewPlaning}>
-                        Почати тренування
+                        Start the training
                     </Button>
 
                     <Graph averagePages={getAveragePages()} data={graphData} />

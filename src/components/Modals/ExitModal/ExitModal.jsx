@@ -17,14 +17,15 @@ const ExitModal = ({ closeModal }) => {
         <>
             <ModalWrapper variant={'info'} closeModal={closeModal}>
                 <Text>
-                    Якщо Ви вийдете з програми незбережені дані будуть втрачені
+                    If you exit the program right now, all unsaved data will be
+                    lost
                 </Text>
                 <ButtonWrapper>
                     <Button variant={'transparent'} onClick={closeModal}>
-                        Відміна
+                        Return
                     </Button>
                     <Button variant={'accent'} onClick={handleLogOut}>
-                        Вийти
+                        Proceed with exit
                     </Button>
                 </ButtonWrapper>
             </ModalWrapper>

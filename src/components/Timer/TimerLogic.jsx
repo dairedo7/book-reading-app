@@ -18,10 +18,10 @@ const TimerLogic = ({ expectDate }) => {
     let title = null;
     if (!expectDate) {
         dateCountDown = new Date('January 1, 2023 14:25:00').getTime();
-        title = 'До закінчення року залишилось';
+        title = 'Left till the end of the current year';
     } else {
         dateCountDown = new Date(expectDate);
-        title = 'До досягнення мети залишилось'
+        title = 'Left to achieve your goal';
     }
 
     function convertMs(ms) {
@@ -63,28 +63,26 @@ const TimerLogic = ({ expectDate }) => {
     return (
         <>
             <TaimerAlign>
-                <TimerTitle>
-                    {title}
-                </TimerTitle>
+                <TimerTitle>{title}</TimerTitle>
                 <TaimerMain>
                     <TimerList>
                         <TimerNumber>{days}</TimerNumber>
-                        <TimerDays>ДН</TimerDays>
+                        <TimerDays>DAYS</TimerDays>
                     </TimerList>
                     <TimerNumber>:</TimerNumber>
                     <TimerList>
                         <TimerNumber>{hours}</TimerNumber>
-                        <TimerDays>ГОД</TimerDays>
+                        <TimerDays>HOURS</TimerDays>
                     </TimerList>
                     <TimerNumber>:</TimerNumber>
                     <TimerList>
                         <TimerNumber>{minutes}</TimerNumber>
-                        <TimerDays>ХВ</TimerDays>
+                        <TimerDays>MINS</TimerDays>
                     </TimerList>
                     <TimerNumber>:</TimerNumber>
                     <TimerList>
                         <TimerNumber>{seconds}</TimerNumber>
-                        <TimerDays>СЕК</TimerDays>
+                        <TimerDays>SECS</TimerDays>
                     </TimerList>
                 </TaimerMain>
             </TaimerAlign>

@@ -17,23 +17,22 @@ import {
 const EmptyLibrary = () => {
     return (
         <>
-        <MobileContainer>
-        
-        <ArrowBackIcon width="24" height="12">
-               <use href={`${icons}#icon-arrowBack`} />
-           </ArrowBackIcon>
-           
-           <BookName>Назва книги</BookName>
-           </MobileContainer>
-        <Box>
+            <MobileContainer>
+                <ArrowBackIcon width="24" height="12">
+                    <use href={`${icons}#icon-arrowBack`} />
+                </ArrowBackIcon>
+
+                <BookName>Name of the book</BookName>
+            </MobileContainer>
+            <Box>
                 <List>
                     <ListItem>
-                        <Title>Крок 1.</Title>
+                        <Title>Step 1.</Title>
                         <StepText>
                             <StepTexIcon width="22" height="17">
                                 <use href={`${icons}#icon-book`} />
                             </StepTexIcon>
-                            Створіть особисту бібліотеку
+                            Create your own library
                         </StepText>
                         <StepDescr>
                             <StepDescrIcon width="10" height="12">
@@ -41,16 +40,16 @@ const EmptyLibrary = () => {
                                     href={`${icons}#icon-perpendicularArrow`}
                                 />
                             </StepDescrIcon>
-                            Додайте до неї книжки, які маєте намір прочитати.
+                            Add the books you intend to read
                         </StepDescr>
                     </ListItem>
                     <ListItem>
-                        <Title>Крок 2.</Title>
+                        <Title>Step 2.</Title>
                         <StepText>
                             <StepTexIcon width="15" height="17">
                                 <use href={`${icons}#icon-flag`} />
-                            </StepTexIcon>{' '}
-                            Сформуйте своє перше тренування
+                            </StepTexIcon>
+                            Create your first reading exercise
                         </StepText>
                         <StepDescr>
                             <StepDescrIcon width="10" height="12">
@@ -58,15 +57,14 @@ const EmptyLibrary = () => {
                                     href={`${icons}#icon-perpendicularArrow`}
                                 />
                             </StepDescrIcon>
-                            Визначте ціль, оберіть період, розпочинайте
-                            тренування.
+                            Set the goal, choose the period, start training.
                         </StepDescr>
                     </ListItem>
                 </List>
                 <Btn variant={'accent'} type="button">
                     Ок
                 </Btn>
-        </Box>
+            </Box>
         </>
     );
 };

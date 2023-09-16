@@ -21,7 +21,7 @@ const BookInfo = () => {
                 <MainTitle>Books Reading</MainTitle>
                 <ListBox>
                     <FirstList>
-                        <SecTitle>Допоможе вам</SecTitle>
+                        <SecTitle>Will Help You</SecTitle>
                         <ListItem>
                             <IconSpan>
                                 <svg width="4px" height="8px">
@@ -31,21 +31,8 @@ const BookInfo = () => {
                                 </svg>
                             </IconSpan>
                             <Text>
-                                Швидше сформулювати свою ціль і розпочати читати
-                            </Text>
-                        </ListItem>
-                        <ListItem>
-                            {' '}
-                            <IconSpan>
-                                <svg width="4px" height="8px">
-                                    <use
-                                        href={`${icons}#icon-arrowToRight`}
-                                    ></use>
-                                </svg>
-                            </IconSpan>
-                            <Text>
-                                Пропорційно розподілити навантаження на кожний
-                                день
+                                To set your goal quicker and actually start
+                                reading
                             </Text>
                         </ListItem>
                         <ListItem>
@@ -56,13 +43,24 @@ const BookInfo = () => {
                                     ></use>
                                 </svg>
                             </IconSpan>
-                            <Text>Відстежувати особистий успіх</Text>
+                            <Text>
+                                Proportionately distribute the load for each day
+                            </Text>
+                        </ListItem>
+                        <ListItem>
+                            <IconSpan>
+                                <svg width="4px" height="8px">
+                                    <use
+                                        href={`${icons}#icon-arrowToRight`}
+                                    ></use>
+                                </svg>
+                            </IconSpan>
+                            <Text>Keep track of the personal success</Text>
                         </ListItem>
                     </FirstList>
                     <ul>
-                        <SecTitle>Також ви зможете </SecTitle>
+                        <SecTitle>Also, you will learn how to:</SecTitle>
                         <ListItem>
-                            {' '}
                             <IconSpan>
                                 <svg width="4px" height="8px">
                                     <use
@@ -71,11 +69,10 @@ const BookInfo = () => {
                                 </svg>
                             </IconSpan>
                             <Text>
-                                Формувати особисту думку незалежну від інших
+                                Form your own opinion independently from others
                             </Text>
                         </ListItem>
                         <ListItem>
-                            {' '}
                             <IconSpan>
                                 <svg width="4px" height="8px">
                                     <use
@@ -84,12 +81,11 @@ const BookInfo = () => {
                                 </svg>
                             </IconSpan>
                             <Text>
-                                Підвищити свої професійні якості опираючись на
-                                нові знання
+                                Improve your professional skills based on
+                                acquired knowledge
                             </Text>
                         </ListItem>
                         <ListItem>
-                            {' '}
                             <IconSpan>
                                 <svg width="4px" height="8px">
                                     <use
@@ -97,7 +93,7 @@ const BookInfo = () => {
                                     ></use>
                                 </svg>
                             </IconSpan>
-                            <Text>Стати цікавим співрозмовником</Text>
+                            <Text>Become an interesting interlocutor</Text>
                         </ListItem>
                     </ul>
                 </ListBox>

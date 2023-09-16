@@ -26,15 +26,15 @@ const TrainingFinishedModal = ({ closeModal }) => {
                     <use href={`${icons}#icon-thumbUp`} />
                 </OrangeIcon>
                 <Text>
-                    Ти молодчина, <br />
-                    Ти впорався з тренуванням!
+                    Well done, <br />
+                    You've managed to complete the entire training!
                 </Text>
                 <ButtonWrapper>
                     <Button variant={'tranparent'} onClick={goToNewTraining}>
-                        Нове тренування
+                        New training
                     </Button>
                     <Button variant={'accent'} onClick={finishTraining}>
-                        Назад
+                        Return to the library
                     </Button>
                 </ButtonWrapper>
             </ModalWrapper>

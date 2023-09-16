@@ -115,7 +115,7 @@ const SignUpForm = () => {
 
                                 <Label>
                                     <LabelText>
-                                        Електронна адреса<Span>*</Span>
+                                        Email adress<Span>*</Span>
                                     </LabelText>
                                     <Input
                                         variant="shadow"
@@ -146,7 +146,7 @@ const SignUpForm = () => {
 
                                 <PasLabel>
                                     <LabelText>
-                                        Пароль<Span>*</Span>
+                                        Password<Span>*</Span>
                                     </LabelText>
                                     <Input
                                         variant="shadow"
@@ -154,16 +154,17 @@ const SignUpForm = () => {
                                         placeholder="..."
                                         name="password"
                                         {...register('password', {
-                                            required: "Поле пароль обов'язкове",
+                                            required:
+                                                'The password field is required',
                                             pattern: {
                                                 value: /^([A-Za-z]|[0-9])+$/,
                                                 message:
-                                                    'Пароль повинен складатися з латинських букв та цифр',
+                                                    'Password needs to include both letters and numbers',
                                             },
                                             minLength: {
                                                 value: 6,
                                                 message:
-                                                    'Довжина пароля не менше 6 символів',
+                                                    'Password length should at least have 6 symbols',
                                             },
                                         })}
                                         aria-invalid={
@@ -179,7 +180,7 @@ const SignUpForm = () => {
 
                                 <PasLabel>
                                     <LabelText>
-                                        Підтвердити пароль<Span>*</Span>
+                                        Confirm the password<Span>*</Span>
                                     </LabelText>
                                     <Input
                                         variant="shadow"
@@ -195,7 +196,7 @@ const SignUpForm = () => {
                                     />
                                     {!checkPas && (
                                         <ErrText role="alert">
-                                            Паролі повиненні бути однаковими
+                                            Passwords don't match
                                         </ErrText>
                                     )}
                                 </PasLabel>
@@ -204,13 +205,13 @@ const SignUpForm = () => {
                                     variant="accent"
                                     onClick={handleSubmit(onSubmit)}
                                 >
-                                    Зареєструватися
+                                    Sign up
                                 </EnterBtn>
                             </Form>
 
                             <LinkBox>
-                                <LinkSpan>Вже з нами?</LinkSpan>{' '}
-                                <Link to={'/signin'}>Увійти</Link>
+                                <LinkSpan>Already have an account?</LinkSpan>{' '}
+                                <Link to={'/signin'}>Sign in</Link>
                             </LinkBox>
                         </MobBox>
                     </TabletBox>

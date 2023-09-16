@@ -28,7 +28,7 @@ export const Graph = ({ averagePages = 0, data }) => {
     return (
         <StatisticsHome>
             <TextStats>
-                Кількість сторінок / день <NumberDay>{averagePages}</NumberDay>
+                Number of pages / day <NumberDay>{averagePages}</NumberDay>
             </TextStats>
             <ResponsiveContainer width="100%" height={getGraphHeight()}>
                 <LineChart data={visibleData()}>

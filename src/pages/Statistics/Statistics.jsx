@@ -54,7 +54,7 @@ const Statistics = ({ result }) => {
                         <FormWrapper>
                             {isTablet && (
                                 <>
-                                    <Title>Моє тренування</Title>
+                                    <Title>My training</Title>
                                     <TrainingForm />
                                 </>
                             )}

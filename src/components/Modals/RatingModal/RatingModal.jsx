@@ -9,10 +9,10 @@ import {
     StyledRating,
     Title,
 } from './RatingModal.styled';
-import {Controller, useForm} from 'react-hook-form';
-import {useState} from 'react';
-import {ModalWrapper} from '../ModalWrapper';
-import {useAddBookReviewMutation} from '../../../redux/books/booksSlice';
+import { Controller, useForm } from 'react-hook-form';
+import { useState } from 'react';
+import { ModalWrapper } from '../ModalWrapper';
+import { useAddBookReviewMutation } from '../../../redux/books/booksSlice';
 
 const RatingModal = ({ closeModal, bookId }) => {
     const { handleSubmit, control } = useForm();
@@ -30,7 +30,7 @@ const RatingModal = ({ closeModal, bookId }) => {
     return (
         <>
             <ModalWrapper closeModal={closeModal} variant={'input'}>
-                <Title>Обрати рейтинг книги</Title>
+                <Title>Pick the book's rating</Title>
                 <Form>
                     <Controller
                         name={'rating'}
@@ -58,7 +58,7 @@ const RatingModal = ({ closeModal, bookId }) => {
                         control={control}
                         render={({ field: { onChange, value } }) => (
                             <Label>
-                                <InputName>Резюме</InputName>
+                                <InputName>Summary</InputName>
                                 <Input
                                     placeholder={'...'}
                                     value={value}
@@ -69,13 +69,13 @@ const RatingModal = ({ closeModal, bookId }) => {
                     />
                     <ButtonWrapper>
                         <Button variant={'transparent'} onClick={closeModal}>
-                            Назад
+                            Back
                         </Button>
                         <Button
                             onClick={handleSubmit(onSubmit, onError)}
                             variant={'accent'}
                         >
-                            Зберегти
+                            Save
                         </Button>
                     </ButtonWrapper>
                 </Form>

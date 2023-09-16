@@ -12,26 +12,26 @@ const Goals = ({ amountBooks, amountDays, booksLeft }) => {
     return (
         <>
             <Wrapper booksLeft={booksLeft}>
-                <Title>Моя мета прочитати</Title>
+                <Title>My goal to read</Title>
                 <InfoWrapper>
                     <StatsItem>
                         <Item>
                             <Text>{amountBooks}</Text>
                         </Item>
-                        <Description>Кількість книжок</Description>
+                        <Description>Number of books</Description>
                     </StatsItem>
                     <StatsItem>
                         <Item>
                             <Text>{amountDays}</Text>
                         </Item>
-                        <Description>Кількість днів</Description>
+                        <Description>Number of days</Description>
                     </StatsItem>
                     {!!booksLeft && (
                         <StatsItem>
                             <Item>
                                 <Text booksLeft={booksLeft}>{booksLeft}</Text>
                             </Item>
-                            <Description>Залишилось книжок</Description>
+                            <Description>Books left to read</Description>
                         </StatsItem>
                     )}
                 </InfoWrapper>

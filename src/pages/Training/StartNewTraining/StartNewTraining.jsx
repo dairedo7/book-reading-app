@@ -1,8 +1,8 @@
-import {Navigate} from 'react-router-dom';
-import {TrainingForm} from '../../../components/TrainingForm';
+import { Navigate } from 'react-router-dom';
+import { TrainingForm } from '../../../components/TrainingForm';
 import icons from '../../../images/svg/icons.svg';
-import {GoBackIcon, GoBackLink} from './StartNewTraining.styled';
-import {Title} from '../Training.styled';
+import { GoBackIcon, GoBackLink } from './StartNewTraining.styled';
+import { Title } from '../Training.styled';
 
 const StartNewTraining = () => {
     let isMobile = window.matchMedia('(max-width: 767px)').matches;
@@ -15,7 +15,7 @@ const StartNewTraining = () => {
                     <use href={`${icons}#icon-arrowBack`} />
                 </GoBackIcon>
             </GoBackLink>
-            <Title>Моє тренування</Title>
+            <Title>My training</Title>
             <TrainingForm />
         </>
     );

@@ -74,7 +74,7 @@ export const Header = () => {
                                         <UserName>{userName}</UserName>
                                     </UserInfo>
                                     <ExitButton onClick={openExitModal}>
-                                        Вихід
+                                        Exit
                                     </ExitButton>
                                 </UserPanel>
                             </>

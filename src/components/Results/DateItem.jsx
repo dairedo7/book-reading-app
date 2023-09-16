@@ -7,7 +7,7 @@ export function DateItem({ data: { date, pagesCount } }) {
 
             <NumberOfPages>
                 {pagesCount}&nbsp;
-                <Pages>стор.</Pages>
+                <Pages>pages</Pages>
             </NumberOfPages>
         </DatesItem>
     );

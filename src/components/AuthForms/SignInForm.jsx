@@ -47,7 +47,8 @@ const SignInForm = () => {
                             required: 'Введіть Ваш email',
                             pattern: {
                                 value: /^[A-Za-z0-9_!#$%&'*+=?`{|}~^.-]+@[A-Za-z0-9.-]+$/,
-                                message: 'Введіть корректну єлектронну адресу ',
+                                message:
+                                    'The provided email address is incorrect',
                             },
                         })}
                         aria-invalid={errors.email ? 'true' : 'false'}
@@ -69,16 +70,17 @@ const SignInForm = () => {
                         {...register('password', {
                             required: {
                                 value: true,
-                                message: "Поле пароль обов'язкове",
+                                message: 'Password field cannot be empty',
                             },
                             pattern: {
                                 value: /^([A-Za-z]|[0-9])+$/,
                                 message:
-                                    'Пароль повинен складатися з латинських букв та цифр',
+                                    'Password needs to include both letters and numbers',
                             },
                             minLength: {
                                 value: 6,
-                                message: 'Довжина пароля не менше 6 символів',
+                                message:
+                                    'Password length should at least have 6 symbols',
                             },
                         })}
                         aria-invalid={errors.password ? 'true' : 'false'}
@@ -91,7 +93,7 @@ const SignInForm = () => {
                 </PasLabel>
 
                 <EnterBtn variant="accent" onClick={handleSubmit(onSubmit)}>
-                    Увійти
+                    Sign in
                 </EnterBtn>
             </Form>
         </>

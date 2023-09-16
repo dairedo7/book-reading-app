@@ -30,15 +30,15 @@ export function BookTraining({ data }) {
             </Wrapper>
             <ListOfDesc>
                 <DescItem>
-                    <Label>Автор:</Label>
+                    <Label>Author:</Label>
                     <Desc>{author}</Desc>
                 </DescItem>
                 <DescItem>
-                    <Label>Рік:</Label>
+                    <Label>Year:</Label>
                     <Desc>{year}</Desc>
                 </DescItem>
                 <DescItem>
-                    <Label>Стор:</Label>
+                    <Label>Pages:</Label>
                     <Desc>{totalPages}</Desc>
                 </DescItem>
             </ListOfDesc>

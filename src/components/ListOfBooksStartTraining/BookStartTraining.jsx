@@ -37,15 +37,15 @@ export function BookStartTraining({ data, deleteBook, id }) {
                 </Wrapper>
                 <ListOfDesc>
                     <TrDescItem>
-                        <Label>Автор:</Label>
+                        <Label>Author:</Label>
                         <Desc> {author}</Desc>
                     </TrDescItem>
                     <TrDescItem>
-                        <Label>Рік:</Label>
+                        <Label>Year:</Label>
                         <Desc>{year}</Desc>
                     </TrDescItem>
                     <TrDescItem>
-                        <Label>Стор:</Label>
+                        <Label>Pages:</Label>
                         <Desc>{totalPages}</Desc>
                     </TrDescItem>
                 </ListOfDesc>
