@@ -21,7 +21,7 @@ const BookInfo = () => {
                 <MainTitle>Books Reading</MainTitle>
                 <ListBox>
                     <FirstList>
-                        <SecTitle>Will Help You</SecTitle>
+                        <SecTitle>Will help you to</SecTitle>
                         <ListItem>
                             <IconSpan>
                                 <svg width="4px" height="8px">
@@ -31,8 +31,7 @@ const BookInfo = () => {
                                 </svg>
                             </IconSpan>
                             <Text>
-                                To set your goal quicker and actually start
-                                reading
+                                Set your goal quicker and actually start reading
                             </Text>
                         </ListItem>
                         <ListItem>
@@ -59,7 +58,7 @@ const BookInfo = () => {
                         </ListItem>
                     </FirstList>
                     <ul>
-                        <SecTitle>Also, you will learn how to:</SecTitle>
+                        <SecTitle>Also, you will learn how to</SecTitle>
                         <ListItem>
                             <IconSpan>
                                 <svg width="4px" height="8px">
