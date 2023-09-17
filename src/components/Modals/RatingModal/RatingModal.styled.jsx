@@ -1,5 +1,5 @@
-import {btn, colors, input, mq} from '../../../baseStyles';
-import {Rating} from '@mui/material';
+import { btn, colors, input, mq } from '../../../baseStyles';
+import { Rating, Typography } from '@mui/material';
 import styled from '@emotion/styled';
 
 export const Form = styled.form`
@@ -18,6 +18,13 @@ export const Title = styled.p`
 
 export const StyledRating = styled(Rating)`
     margin-right: 10px;
+`;
+
+export const StyledReview = styled.p`
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    font-style: italic;
 `;
 
 export const Label = styled.label`

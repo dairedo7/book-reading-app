@@ -1,6 +1,11 @@
-import {ItemLabel, ListOfBook, ListOfLabels, TableOfBooks,} from '../ListOfBooks/ListOfBooks.styled';
+import {
+    ItemLabel,
+    ListOfBook,
+    ListOfLabels,
+    TableOfBooks,
+} from '../ListOfBooks/ListOfBooks.styled';
 
-import {BookTraining} from './BookTraining';
+import { BookTraining } from './BookTraining';
 
 export function ListOfBooksTraining({ books }) {
     return (

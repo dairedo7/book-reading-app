@@ -30,6 +30,10 @@ export const booksSlice = createApi({
             query: () => 'book/get-status/done',
             providesTags: ['Done'],
         }),
+        getSummary: builder.query({
+            query: () => 'book/summary',
+            invalidatesTags: ['Done'],
+        }),
         addBook: builder.mutation({
             query: book => ({
                 url: '/book',
@@ -77,6 +81,7 @@ export const {
     useGetPlanBooksQuery,
     useGetReadBooksQuery,
     useGetDoneBooksQuery,
+    useGetSummaryQuery,
     useGetPlanningQuery,
     useAddBookMutation,
     useAddPlaningMutation,

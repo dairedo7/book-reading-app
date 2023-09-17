@@ -35,7 +35,7 @@ const SignInForm = () => {
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <EmailLabel>
                     <LabelText>
-                        Електронна адреса<Span>*</Span>
+                        Email address<Span>*</Span>
                     </LabelText>
                     <Input
                         variant="shadow"
@@ -60,7 +60,7 @@ const SignInForm = () => {
 
                 <PasLabel>
                     <LabelText>
-                        Пароль<Span>*</Span>
+                        Password<Span>*</Span>
                     </LabelText>
                     <Input
                         variant="shadow"

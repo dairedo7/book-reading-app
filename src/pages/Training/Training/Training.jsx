@@ -69,6 +69,7 @@ export const Training = () => {
             (acc, book) => [...acc, book._id],
             []
         );
+        console.log(books);
 
         if (!startValue || !endValue) {
             warningNotification(

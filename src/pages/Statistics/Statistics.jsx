@@ -21,12 +21,13 @@ import { fillGraphData } from '../../services/graphService';
 
 const Statistics = ({ result }) => {
     const isTablet = window.screen.width > 767 && window.screen.width <= 1279;
-
+    console.log(result);
     const booksNumber = result.data.booksNumber;
     const planningDuration = result.data.planningDur;
-    const booksLeft = result.planning.booksToRead.length;
-    const planing = result.planning;
     const books = result.data.books;
+    const booksLeft = books.filter(({ status }) => status === 'read').length;
+    const planing = result.planning;
+
     const { endDate, startDate, results, totalPages } = planing;
     const averagePages = Math.ceil(totalPages / planningDuration);
     const graphData = fillGraphData(
