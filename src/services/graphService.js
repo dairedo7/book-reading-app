@@ -1,5 +1,8 @@
 import { differenceInDays } from 'date-fns';
 
+import notification from '../helpers/notification';
+const { errorNotification } = notification;
+
 export const getFormattedResults = (results, startDate) => {
     const formattedResults = {};
 
@@ -49,7 +52,7 @@ export const fillGraphData = (results, startDate, totalPages, duration) => {
     const graphData = [...arr, ...left];
 
     for (const day in obj) {
-        graphData[Number(day)].uv = obj[day];
+        if (graphData[Number(day)]) graphData[Number(day)].uv = obj[day];
     }
 
     return graphData;
