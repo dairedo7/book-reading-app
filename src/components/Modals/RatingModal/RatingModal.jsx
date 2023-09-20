@@ -8,6 +8,7 @@ import {
     Label,
     StyledRating,
     StyledReview,
+    StyledReviewTitle,
     Title,
 } from './RatingModal.styled';
 import { Controller, useForm } from 'react-hook-form';
@@ -77,18 +78,24 @@ const RatingModal = ({ closeModal, bookId }) => {
                         control={control}
                         render={({ field: { onChange, value } }) => (
                             <Label>
-                                <InputName>Summary</InputName>
+                                <InputName>
+                                    Describe your impressions of the book
+                                    here...
+                                </InputName>
+
                                 <Input
                                     placeholder={'...'}
                                     value={value}
                                     onChange={onChange}
                                 />
-
-                                <StyledReview>
-                                    {summary
-                                        ? summary
-                                        : 'You review will appear here...'}
-                                </StyledReview>
+                                <StyledReviewTitle>
+                                    Summary
+                                    <StyledReview>
+                                        {summary
+                                            ? summary
+                                            : 'You review will appear here...'}
+                                    </StyledReview>
+                                </StyledReviewTitle>
                             </Label>
                         )}
                     />
