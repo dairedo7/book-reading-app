@@ -74,7 +74,7 @@ const SignUpForm = () => {
                             <Form onSubmit={handleSubmit(onSubmit)}>
                                 <Label>
                                     <LabelText>
-                                        Ім’я<Span>*</Span>
+                                        Name<Span>*</Span>
                                     </LabelText>
                                     <Input
                                         variant="shadow"
@@ -86,19 +86,19 @@ const SignUpForm = () => {
                                             required: {
                                                 value: true,
                                                 message:
-                                                    'Поле Ім’я обов’язкове',
+                                                    'Name field is required',
                                             },
 
                                             minLength: {
                                                 value: 3,
                                                 message:
-                                                    'Ім’я повинно бути більше трьох символів',
+                                                    'Name has to consist of at least three characters',
                                             },
 
                                             pattern: {
                                                 value: /[А-Яа-я0-9a-zA-Z][^\W]/,
                                                 message:
-                                                    'Ім’я повинно складатися тільки з букв та цифр',
+                                                    'Name can only include letters and numbers',
                                             },
                                         })}
                                         aria-invalid={
@@ -125,12 +125,13 @@ const SignUpForm = () => {
                                         {...register('email', {
                                             required: {
                                                 value: true,
-                                                message: 'Введіть Ваш email',
+                                                message:
+                                                    'Please, fill out the email field.',
                                             },
                                             pattern: {
                                                 value: /^[A-Za-z0-9_!#$%&'*+=?`{|}~^.-]+@[A-Za-z0-9.-]+$/,
                                                 message:
-                                                    'Введіть корректну єлектронну адресу ',
+                                                    'The email address must be a valid email address.',
                                             },
                                         })}
                                         aria-invalid={

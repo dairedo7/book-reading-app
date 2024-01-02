@@ -25,7 +25,7 @@ const SignInForm = () => {
     const onSubmit = async data => {
         dispatch(signIn(data)).then(r => {
             if (r.type === 'auth/signin/rejected') {
-                errorNotification('Невірна пошта або пароль!');
+                errorNotification('Wrong email address or password!');
             }
         });
     };
@@ -44,7 +44,7 @@ const SignInForm = () => {
                         autoFocus="on"
                         name="email"
                         {...register('email', {
-                            required: 'Введіть Ваш email',
+                            required: 'Please, fill out email address field.',
                             pattern: {
                                 value: /^[A-Za-z0-9_!#$%&'*+=?`{|}~^.-]+@[A-Za-z0-9.-]+$/,
                                 message:

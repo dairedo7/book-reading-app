@@ -11,10 +11,10 @@ export function ListOfBooksTraining({ books }) {
     return (
         <TableOfBooks>
             <ListOfLabels>
-                <ItemLabel>Назва книги</ItemLabel>
-                <ItemLabel>Автор</ItemLabel>
-                <ItemLabel>Рік</ItemLabel>
-                <ItemLabel>Стор.</ItemLabel>
+                <ItemLabel>Title</ItemLabel>
+                <ItemLabel>Author</ItemLabel>
+                <ItemLabel>Year</ItemLabel>
+                <ItemLabel>Nr. of pages</ItemLabel>
             </ListOfLabels>
             <ListOfBook>
                 {books.map(book => {

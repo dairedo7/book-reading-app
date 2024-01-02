@@ -79,7 +79,7 @@ export function TrainingForm({
         e.preventDefault();
 
         if (!book) {
-            warningNotification('Виберіть із бібліотеки хоча б одну книгу!');
+            warningNotification('Pick at least one book from the library');
         } else {
             addBook(book);
         }
@@ -99,7 +99,7 @@ export function TrainingForm({
                         disabledDate={disabledStartDate}
                         format="YYYY-MM-DD"
                         value={startValue}
-                        placeholder="Початок"
+                        placeholder="Start date"
                         onChange={onStartChange}
                         onOpenChange={handleStartOpenChange}
                         suffixIcon={
@@ -117,7 +117,7 @@ export function TrainingForm({
                         disabledDate={disabledEndDate}
                         format="YYYY-MM-DD"
                         value={endValue}
-                        placeholder="Кінець"
+                        placeholder="End date"
                         onChange={onEndChange}
                         open={endOpen}
                         onOpenChange={handleEndOpenChange}
@@ -140,7 +140,7 @@ export function TrainingForm({
             <Selects
                 showSearch
                 value={book}
-                placeholder="Виберіть книги з бібліотеки"
+                placeholder="Choose books from your library"
                 size="large"
                 optionFilterProp="children"
                 onChange={handleChange}

@@ -1,8 +1,5 @@
 import { differenceInDays } from 'date-fns';
 
-import notification from '../helpers/notification';
-const { errorNotification } = notification;
-
 export const getFormattedResults = (results, startDate) => {
     const formattedResults = {};
 
